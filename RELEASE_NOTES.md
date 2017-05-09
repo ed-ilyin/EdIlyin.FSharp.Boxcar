@@ -1,2 +1,2 @@
-### 0.0.2 - May 9 2017
+### 0.0.3 - May 9 2017
 * Initial release
