@@ -4,7 +4,7 @@ NUGET
     Chiron (6.2.1)
       Aether (>= 8.0.2 < 9.0)
       FParsec (>= 1.0 < 2.0)
-    EdIlyin.FSharp.Elm.Core (1.0.14)
+    EdIlyin.FSharp.Elm.Core (1.0.16)
       Chiron
       FSharp.Core (>= 3.0 < 4.0)
     FParsec (1.0.2)
