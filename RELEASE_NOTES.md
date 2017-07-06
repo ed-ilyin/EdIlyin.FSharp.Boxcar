@@ -1,3 +1,6 @@
+### 0.0.6 - July 6 2017
+* Switches to built-in Result
+
 ### 0.0.5 - May 10 2017
 * Removes FSharp.Core dependency
 

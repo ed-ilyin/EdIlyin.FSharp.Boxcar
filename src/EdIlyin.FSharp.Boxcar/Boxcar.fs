@@ -4,10 +4,10 @@ open Hopac
 open EdIlyin.FSharp.Elm.Core
 
 
-type Boxcar<'a> = Job<Result<string,'a>>
+type Boxcar<'a> = Job<Result<'a,string>>
 
 
-type Train<'a> = Job<seq<Result<string,'a>>>
+type Train<'a> = Job<seq<Result<'a,string>>>
 
 
 module Boxcar =
@@ -16,7 +16,7 @@ module Boxcar =
 
 
     let bind (func: 'a -> Boxcar<'b>) (boxcar: Boxcar<'a>) : Boxcar<'b> =
-        Job.bind (Result.unpack (Err >> Job.result) func) boxcar
+        Job.bind (Result.unpack (Error >> Job.result) func) boxcar
 
 
     let result x : Boxcar<_> = Result.Ok x |> Job.result
