@@ -1,3 +1,6 @@
+### 0.0.7 - July 12 2017
+* back to net4.5 and target 4.1.0.0
+
 ### 0.0.6 - July 6 2017
 * Switches to built-in Result
 
